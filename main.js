@@ -252,7 +252,9 @@ function update(dt){
     
     
     birds.forEach((bird, i) => {
-        drawImage(ctx, bird.image, bird.pos[0], bird.pos[1], (bird.vel[1]/reduccion_giro)*radians)
+        if(i<20){
+            drawImage(ctx, bird.image, bird.pos[0], bird.pos[1], (bird.vel[1]/reduccion_giro)*radians)
+        }
         // if (i==0)
         bird.vel[1]+=bird.acel[1]*dt
         bird.pos[1]+=bird.vel[1]*dt
