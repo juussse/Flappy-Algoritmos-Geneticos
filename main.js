@@ -20,7 +20,7 @@ let generacion = 0
 let layers = [3,3,1]
 let num_genes = 13
 
-let num_birds_gen = 500
+let num_birds_gen = 100
 
 var logo
 
